@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Wheel of Fortune</title>
+    <script type="text/javascript" src="myScript.js"></script>
+    <link  rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+<form name="wheeloffortune">
+    <h1>Welcome to Ishan's Wheel of Fortune</h1>
+    <button  id="startGame" type="button" onclick="makeName()">Click here to start the game</button>
+    <div id="letters" style="display: none">
+        <p id="guessing">Guessed letters: </p>
+    </div>
+    <div id="gaming" style="display: none">
+        <h3 id="turn">Turn of player:</h3>
+        <h3 id ="roundNumberG">Round Number:</h3>
+        <h2 id="guessTheWord">...</h2>
+        <h3 id="cat">Category:</h3>
+        <p id="player1money">...</p>
+        <p id="player2money">...</p>
+        <p id="player3money">...</p>
+        <img src="img/wheel.jpg.jpg" id="image" height="25%" width="25%" alt="blah">
+        <p id = "dollarAmount">...</p>
+        <button type="button" onclick="generateMoney()">Click to spin the wheel</button>
+        <button type="button" onclick="guess()">Click to guess a letter</button>
+        <br><br>
+        <button type="button" onclick="solve()">Click to solve the puzzle!(+$2500)</button>
+        <!--<button type="button" onclick="vowel()">Click to guess a vowel($250)</button> -->
+    </div>
+</form>
+</body>
+</html>
